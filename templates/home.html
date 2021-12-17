@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% block content %} 
+<div class="starter-template">
+ <h1>Thompson Underwood Furniture Order Tracking</h1>
+ <p class="lead">Welcome to the Thompson Underwood order tracking site</p>
+ <p class="lead">Please sign in to view your current order status</p>
+</div>
+<div class="login-template">
+    <h1>Login </h1>
+    <p class="lead">Sign in to track your parcels </i></p>
+   </div>
+   <div id="main">
+    <form method="post" action="{{ url_for('submitted_login') }}">
+    <label for="username">Username:</label>
+    <input type="text" name="username"><br />
+    <label for="password">Password:</label>
+    <input type="password" name="password"><br />
+    <input type="submit">
+    </form>
+    </div>
+{% endblock %} 

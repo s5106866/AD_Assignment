@@ -1,0 +1,44 @@
+{% extends "base.html" %} 
+{% block content %} 
+<div class="container">
+    <div class="contact-parent">
+       <div class="contact-child child1">
+          <p>
+             <i class="fas fa-map-marker-alt"></i> Address <br />
+             <span> 
+                742 Evergreen Terrace  
+             <br />
+             Bournemouth
+             </span>
+          </p>
+          <p>
+             <i class="fas fa-phone-alt"></i> Free Phone 9-5 \n Mon-Fr <br />
+             <span> 0207 031 3000</span>
+          </p>
+          <p>
+             <i class=" far fa-envelope"></i> For all other Enqiries <br />
+             <span>contact@ThompsonUnderwood.co.uk</span>
+          </p>
+       </div>
+       <div class="contact-child child2">
+          <div class="inside-contact">
+             <h2>Contact Us</h2>
+             <h3>
+                <span id="confirm">
+             </h3>
+             <p>Name *</p>
+             <input id="Contact_name" type="text" Required="required">
+             <p>Email *</p>
+             <input id="contact_email" type="text" Required="required">
+             <p>Phone *</p>
+             <input id="contact_phone" type="text" Required="required">
+             <p>Subject *</p>
+             <input id="contact_subject" type="text" Required="required">
+             <p>Message *</p>
+             <textarea id="contact_message" rows="4" cols="20" Required="required" ></textarea>
+             <input type="submit" id="btn_send" value="SEND">
+          </div>
+       </div>
+    </div>
+ </div>
+ {% endblock %} 
